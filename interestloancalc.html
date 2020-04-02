@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tax & Interest Loan Calculator</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,800&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://calculadora639.000webhostapp.com/" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <!-- ios support -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href="/img/icons/icon-512x512.png" sizes="2048x2732" rel="apple-touch-startup-image" />
+  <link href="/img/icons/icon-512x512.png" sizes="1668x2224" rel="apple-touch-startup-image" />
+  <link href="/img/icons/icon-512x512.png" sizes="1536x2048" rel="apple-touch-startup-image" />
+  <link href="/img/icons/icon-512x512.png" sizes="1125x2436" rel="apple-touch-startup-image" />
+  <link href="/img/icons/icon-512x512.png" sizes="1242x2208" rel="apple-touch-startup-image" />
+  <link href="/img/icons/icon-512x512.png" sizes="750x1334" rel="apple-touch-startup-image" />
+  <link href="/img/icons/icon-512x512.png" sizes="640x1136" rel="apple-touch-startup-image" />
+  <link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+  <link rel="apple-touch-icon" sizes="128x128" href="/img/icons/icon-128x128.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="/img/icons/android-chrome-192x192.png" />
+  <link rel="apple-touch-icon" sizes="256x256" href="/img/icons/icon-256x256.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4" />
+  <meta name="theme-color" content="#FFE1C4" />
+</head>
+
+<body class="background">
+  <div class="body">
+    <div class="loan">
+      <div id="principalOfLoan">
+        <h1 class="hOne" id="hTwo"><a class="backLink" href="/index.html"> Interest Loan Calculator </a> </h1>
+        <!-- <div>
+          <input type="checkbox" id="show2" onclick="myFunc(this)" />
+          <label for="show">Check to hide previous results</label>
+          <p id="text2" style="display:none">
+            Uncheck box to show and compare previous results.
+          </p>
+        </div> -->
+        <p class="para" id="para"><span class="halfBorderTop">- Principal of the Loan:</span>
+        </p>
+        <div>
+          <input type="number" id="principal" class="inputStyle" name="principal"
+            placeholder="Enter Principal Amount" />
+        </div>
+        <div>
+          <ol class="resultBox" id="prince" type="a" reversed></ol>
+        </div>
+      </div>
+
+      <div id="interestRate">
+        <p class="para"><span class="halfBorderTop">- Interest rate:</span>
+          <span class="interRate">
+            <input type="number" id="rate" class="inputStyle" name="rate" placeholder="Enter Interest Rate" /></span>%
+        </p>
+        <div>
+          <ol class="resultBox" id="intRate" type="a" reversed></ol>
+        </div>
+      </div>
+
+      <div id="numberOfPayments">
+        <p class="para"><span class="halfBorderTop">
+            - Total number of MONTHLY payments:</span>
+          <span class="numberOfPaym">
+            <input type="number" id="numberPay" class="inputStyle" name="numberPay"
+              placeholder="Enter Number of Payments" /> </span>
+        </p>
+        <div>
+          <ol class="resultBox" id="numOfPay" type="a" reversed></ol>
+        </div>
+      </div>
+
+      <div id="monthlyPaymentTotal">
+        <p class="para"><span class="halfBorderTop">- Monthly Payment Total:</span></p>
+        <div>
+          <ol class="resultBox" id="monthlyPayment" type="a" reversed></ol>
+        </div>
+      </div>
+
+      <div id="completeTotal">
+        <p class="para"><span class="halfBorderTop">- Complete Total Amount Due:</span></p>
+        <div>
+          <ol class="resultBox" id="completeTot" type="a" reversed></ol>
+        </div>
+      </div>
+      <div id="Total Interest">
+        <p class="para"><span class="halfBorderTop">- Total Interest Amount Due:</span></p>
+        <div>
+          <ol class="resultBox" id="interestTot" type="a" reversed></ol>
+        </div>
+      </div>
+      <button id="boton" class="buttonStyle">Calculate</button>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+  <script src="app2.js"></script>
+
+</body>
+
+</html>
