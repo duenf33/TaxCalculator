@@ -13,8 +13,8 @@ const prt = document.getElementById('prt');
 // document.getElementById(number.id).select();
 
 // //sample arrays
-let taxCalcs = [];
-console.log(taxCalcs);
+// let taxCalcs = [];
+// console.log(taxCalcs);
 
 // Tax Calculator CheckBox to hide previous results
 function myFunction(checkBox) {
